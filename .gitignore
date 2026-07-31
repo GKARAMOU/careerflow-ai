@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.env
+.DS_Store
+backend/__pycache__/
+backend/.pytest_cache/
+backend/**/*.pyc
+backend/*.db
+backend/*.egg-info/
+backend/**/__pycache__/
+tsconfig.tsbuildinfo
