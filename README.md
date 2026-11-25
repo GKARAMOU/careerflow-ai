@@ -25,9 +25,7 @@ npm run dev
 
 Open `http://localhost:5173`.
 
-The GitHub Pages deployment is a recruiter-friendly frontend demo with seeded
-sample data and a working add-application flow. Run the full stack locally to
-start the API and PostgreSQL services as well.
+The GitHub Pages deployment is a browser-only interactive demo using sample data. You can add, search, filter and select applications; changes last only until the page is refreshed. Scores and insights are examples, not AI predictions. The frontend is not yet connected to the backend. Docker Compose starts the API and PostgreSQL independently for API exploration.
 
 ## Run the full stack
 
@@ -52,10 +50,8 @@ pytest
 ## Architecture
 
 ```text
-React + TypeScript UI
-        |
-        | REST / JWT
-        v
+React + TypeScript UI (browser demo; not connected to API)
+
 FastAPI application
         |
         | async SQLAlchemy
